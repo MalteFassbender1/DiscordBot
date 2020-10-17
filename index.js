@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({ partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 
-const token = "NzU4NjEzMDMwOTg3NjI4NjA1.X2xfcA.XdnPNKdJO04tObqIvQuibhF4prE";
+const token = "PRIVATE TOKEN";
 const prefix = "!";
 
 process.on("unhandledRejection", console.error);
@@ -277,33 +277,3 @@ function HelpEmbed(msg)
 
   return msg.reply(exampleEmbed);
 }
-
-
-
-
-
-
-
-
-
-      // case "close" :
-        
-      //     if (!msg.channel.name.startsWith(`ticket-`)) return msg.channel.send(`You can't use the close command outside of a ticket channel.`);
-      //     // Confirm delete - with timeout (Not command)
-      //     msg.channel.send(`Are you sure? Once confirmed, you cannot reverse this action!\nTo confirm, type \`!c\`. This will time out in 10 seconds and be cancelled.`)
-      //         .then((m) => {
-      //             msg.channel.awaitMessages(response => response.content === '!c', {
-      //                     max: 1,
-      //                     time: 10000,
-      //                     errors: ['time'],
-      //                 })
-      //                 .then((collected) => {
-      //                     msg.channel.delete();
-      //                 })
-      //                 .catch(() => {
-      //                     m.edit('Ticket close timed out, the ticket was not closed.').then(m2 => {
-      //                         m2.delete();
-      //                     }, 3000);
-      //                 });
-      //         });
-      //         break;
